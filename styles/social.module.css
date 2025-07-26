@@ -1,6 +1,6 @@
 .list {
   display: flex;
-  place-content: flex-end;
+  justify-content: flex-end;
   gap: 1.5em;
   font-size: var(--icon-size, 24px);
 }
