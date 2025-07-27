@@ -27,12 +27,16 @@ export default function Post({ title, publish, content, eyecatch, categories, de
         <PostHeader title={title} subtitle="Blog Article" publish={publish} />
         <figure>
           <Image
+            key={eyecatch.url}
             src={eyecatch.url}
             alt=""
-            layout="responsive"
             width={eyecatch.width}
             height={eyecatch.height}
             sizes="(min-width:1152px) 1152ex,100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
             priority
             placeholder="blur"
             blurDataURL={eyecatch.blurDataURL}
