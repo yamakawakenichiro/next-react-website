@@ -19,7 +19,18 @@ export default function About() {
       />
       <Hero title="About" subtitle="About development activities" />
       <figure>
-        <Image src={eyecatch} alt="" layout="responsive" sizes="(min-width:1152px)1152px,100vw" priority />
+        <Image
+          src={eyecatch}
+          alt=""
+          width={1920}
+          height={960}
+          sizes="(min-width:1152px)1152px,100vw"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          priority
+        />
       </figure>
       <TwoColumn>
         <TwoColumnMain>
