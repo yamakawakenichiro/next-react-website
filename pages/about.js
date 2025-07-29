@@ -1,9 +1,11 @@
+import Image from "next/image"
 import Container from "components/container"
 import Hero from "components/hero"
 import PostBody from "components/post-body"
 import Contact from "components/contact"
+import Accordion from "components/accordion"
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from "components/two-column"
-import Image from "next/image"
+
 import eyecatch from "images/about.jpg"
 import Meta from "components/meta"
 
@@ -64,6 +66,22 @@ export default function About() {
               pタグでボックスから文字がはみ出てしまう。
               文字がボックスからはみ出す原因は、長い単語や連続した文字列が改行されないことが多いです。特に英語や数字がスペースなしで続いていると、CSSが「どこで折り返せばいいか分からない」状態になります
             </p>
+            <h2>FAQ</h2>
+            <Accordion heading="プログラミングのポイントについて">
+              <p>
+                プログラミングのポイントは、作りたいものを作ることです。楽しいことから思いつき、目標とゴールを決め、そこに向かってさまざまな課題を設定していきながら、プログラムを作っていきます。
+              </p>
+            </Accordion>
+            <Accordion heading="古代語の解読について">
+              <p>
+                古代語を解読するのに必要なのは、書かれた文字そのものだけです。古代の世界観や思考方法。それらを読み取ってこそ古代の世界観が理解できてきます。
+              </p>
+            </Accordion>
+            <Accordion heading="公開リポジトリの活用について">
+              <p>
+                公開リポジトリを活用すると、全世界のどこからでもアクセスし、開発者が関連するプロジェクトのタスクを利用することができます。
+              </p>
+            </Accordion>
           </PostBody>
         </TwoColumnMain>
         <TwoColumnSidebar>
